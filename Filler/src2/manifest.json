@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "123 Testing",
+    "version": "0.1",
+    "description": ":-)",
+    "browser_action": {
+        "default_title": "Click to fill the form"
+    },
+    "background_page": "background.html",
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+  ]
+}

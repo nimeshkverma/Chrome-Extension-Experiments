@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <script>
+      chrome.browserAction.onClicked.addListener(function(tab) {
+        chrome.tabs.executeScript(null, {
+            code: "document.forms[0]['q'].value='Hello World!'"
+        })
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
