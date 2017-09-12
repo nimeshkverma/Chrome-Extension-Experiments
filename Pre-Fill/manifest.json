@@ -1,0 +1,36 @@
+{
+  "name": "Pre-Fill",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description" : "Pre-Fill description: TO-DO",
+  "icons": { "16": "icons/16x16.png", "48": "icons/48x48.png", "128": "icons/128x128.png" },
+
+  "omnibox": { "keyword" : "Filled" },
+  
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/19x19.png",
+      "38": "icons/38x38.png"
+    },
+    "default_title": "That's the tool tip",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ]
+
+}
